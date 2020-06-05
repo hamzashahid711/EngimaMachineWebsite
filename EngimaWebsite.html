@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Enigma Machine</title>
+  <style>
+  table, td {
+  border: 1px solid black;
+  }
+
+  body {
+  background-color: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FPEFk3Nn.jpg&f=1&nofb=1");
+}
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+
+  td {
+  height: 50px;
+  vertical-align: middle;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  z.impact {
+  font-family:Impact, Charcoal, sans-serif;
+   text-shadow: 5px 2px 2px red;
+   width: 300px;
+  height: 100px;
+
+
+  }
+
+  z.f{
+  font: 20px Arial, sans-serif;
+  }
+  .row {
+  display: flex;
+  }
+
+  .column {
+  flex: 33.33%;
+  padding: 5px;
+  }
+  .inset {border-style: inset;
+  border-left-style: solid;
+  border-right-style: solid;
+  background-color: lightgrey;
+  }
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  }
+
+  #myBtn:hover {
+  background-color: #100;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  color: red;
+  }
+  ul{
+  list-style-type: none;
+
+
+  }
+  h2{
+  text-align: center;
+  font-family: "Times New Roman"
+  }
+  a {
+
+  margin: 0;
+  color: black;
+  text-decoration:none;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <h1> <z class = "impact" >Enigma Machine</h1></z>
+<hr style="height:2px;border:none;color:#333;background-color:#333";/>
+  <p> <em>Hamza Shahid</em> </p>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <div id="introduction">
+  <br>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+        <p style = "text-indent : 2em;"> The Enigma machine was an encryption machine used by the
+          Germans during WWII
+          to transmit encrypted messages to direct and communicate with friendly troops accross the world.
+         The Enigma machine had billions and billions
+          of ways to encode a message. This made cracking German codes during the war and interceptign messages about
+          upcoming missions almost impossible.</p>
+  <div class="row">
+  <div class="column">
+    <img src="http://cbsnews2.cbsistatic.com/hub/i/r/2015/04/10/c3ea0db6-0f94-4984-9a82-3d6f25dc5fd6/crop/620x698+0+74/37486d76e11504eae57459cfdfcf77bd/enigma-machine.jpg"
+     alt="Enigma" style = "width: 100%"height = 260 >
+  </div>
+  <div class="column">
+    <img src="http://bombe.org.uk/wp-content/uploads/2017/10/enigma-three-wheel.jpg"
+     alt="Forest" style="width:100%"height = 260 >
+  </div>
+  <div class="column">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0snTbjYxhmJfPzaZK6CNvAHaEe%26pid%3DApi&f=1"
+     alt="Mountains" style="width:100%"height = 260>
+
+  </div>
+
+</div>
+  <br>
+<div class="inset">
+
+  <p  style = "text-indent : 1.4em;font-size:25px; color: grey;"><b> Contents</b> </p>
+
+<nav>
+<ul>
+  <li><a href="#Creation">Creation</a></li>
+  <li><a href="#Encryption">Encryption</a></li>
+  <li><a href="#Decryption">Decryption</a></li>
+
+</ul>
+</nav>
+  </div>
+
+<div id = "Creation">
+<hr style="height:2px;border:none;color:#333;background-color:#333";/>
+  <h2>Creation</h2>
+<hr style="height:2px;border:none;color:#333;background-color:#333";/>
+  <p style = "text-indent : 2em;"> At first Arthur Scherbius was the one credited
+    as the inventor of the
+     Enigma machine and Hugo Koch is
+     credited as a co-inventor. In 2003 it was discovered that this was wrong.
+     Scherbius patented his Enigma machine in 1918 and Hugo Koch patented a
+     similar electric rotor cipher machine in 1919. In 1927,
+     Scherbius paid Koch $350 for his patent rights, although
+      Scherbius had the previous patent. Koch
+      never built a machine and died in 1928. Scherbius died in a horse carriage
+      accident in 1929. It would take 76 years before the reason for Scherbius's
+      purchase would be known.</p>
+      <div class="row">
+      <div class="column">
+        <img src="https://qph.fs.quoracdn.net/main-qimg-86d2ff80ad7f9ae863eba0379483002b"
+         alt="Enigma" style = "width: 60%"height = 290 >
+      </div>
+
+      </div>
+      <p style= "text-indent : 2em;"> In 2003 there had been a 1919 lawsuit brought by 2 Dutch Naval officers,
+      Theo van Hengel and Rudolf Spengler, who claimed to have invented the Enigma machine.
+      It turns out they invented their machine in 1915, and even built and tested a prototype.
+       The Dutch officers hired a patent attorney, but the Dutch Navy wanted to keep this
+        device a secret and did not allow it to be patented. The patent attorney just happened
+         to be the brother-in-law of Hugo Koch.The patent drawings used by Koch and Scherbius were
+         copied from the Dutch officers. So the purchase of the patent rights by Scherbius seems
+         to be a payoff to Koch for sharing the stolen patent drawings. Despite this evidence,
+         the Dutch officers lost their lawsuit, but they are now viewed as the original inventors
+         of the Enigma machine.</p>
+
+         <div class="row">
+         <div class="column">
+           <img src="https://qph.fs.quoracdn.net/main-qimg-795a34c6641463befb18a4306910ffd6"
+            alt="Enigma" style = "width: 100%"height = 290 >
+         </div>
+         <div class="row">
+         <div class="column">
+           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdf%2Fa3%2Fc6%2Fdfa3c6f847c4295c18d11894da8833af.jpg&f=1&nofb=1"
+            alt="Enigma" style = "width: 75%"height = 290 >
+         </div>
+       </div>
+     </div>
+      </div>
+      <div id = "Encryption">
+        <hr style="height:2px;border:none;color:#333;background-color:#333";/>
+          <h2>Encryption</h2>
+        <hr style="height:2px;border:none;color:#333;background-color:#333";/>
+        <p style= "text-indent : 2em;"> The Enigma machine used a form of substitution encryption.
+          Encoded messages would be a particular scramble of letters on a given day that would would translate to a comprehendible sentence when unscrambled.
+
+  When a key on the keyboard is pressed, one or more rotors move to form a new rotor configuration which will encode one letter as another. Current flows through the machine and lights up one display lamp on the lamp board, which shows the output letter. So if the "K" key is pressed, and the Enigma machine encodes that letter as a "P," the "P" would light up on the lamp board.
+
+  Each month, Enigma operators received codebooks which specified which settings the machine would use each day. Every morning the code would change.
+
+  For example, one one day, the codebook may list the settings described in the day-key below:z<br>
+<br>
+  1. Plugboard settings: A/L – P/R – T/D – B/W – K/F – O/Y
+
+  A plugboard is similar to an old-fashioned telephone switch board that has ten wires, each wire having two ends that can be plugged into a slot. Each plug wire can connect two letters to be a pair (by plugging one end of the wire to one letter’s slot and the other end to another letter). The two letters in a pair will swap over, so if “A” is connected to “Z,” “A” becomes “Z” and “Z” becomes “A.” This provides an extra level of scrambling for the military.
+
+  To implement this day-key first you would have to swap the letters A and L by connecting them on the plugboard, swap P and R by connecting them on the plugboard, and then the same with the other letter pairs listed above. Essentially, a one end of a cable would be plugged into the "A" slot and the other end would be plugged into the L slot. Before any further scrambling happens by the rotors, this adds a first layer of scrambling where the letters connected by the cable are encoded as each other. For example, if I were to encode the message APPLE after connecting only the "A" to the "L", this would be encoded as LPPAE.</p>
+  <div class="row">
+  <div class="column">
+    <img src="https://ds055uzetaobb.cloudfront.net/brioche/uploads/iVvdZithen-800px-enigma-plugboard.jpg?width=2400"
+     alt="Enigma" style = "width: 150%"height = 250 >
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Enigma_keylist_3_rotor.jpg"
+     alt="Enigma" style = "width: 75%"height = 250 >
+  </div>
+  </div>
+  </div>
+  <p style= "text-indent : 2em;"> 2. Rotor (or scrambler) arrangement: 2 — 3 —1
+
+The Enigma machines came with several different rotors, each rotor providing a different encoding scheme. In order to encode a message, the Enigma machines took three rotors at a time, one in each of three slots. Each different combination of rotors would produce a different encoding scheme. Note: most military Enigma machines had three rotor slots though some had more.
+
+To accomplish the configuration above, place rotor #2 in the 1st slot of the enigma, rotor #3 in the 2nd slot, and rotor #1 in the 3rd slot..</p>
+3. Rotor orientations: D – K –P
+
+On each rotor, there is an alphabet along the rim, so the operator can set in a particular orientation. For this example, the operator would turn the rotor in slot 1 so that D is displayed, rotate the second slot so that K is displayed, and rotate the third slot so that P is displayed.<br><br>
+Since there are 2626 letters in the alphabet, there are 26!26! ways to arrange the letters, but the plugboard can only make 1010 pairs, so there are 2020 letters involved with the pairings, and 66 leftover that must be divided out. Furthermore, there are 1010 pairs of letters, and it does not matter what order the pairs are in, so divide also by 10!10!, and the order of the letters in the pair does not matter, so divide also by 2^102
+1
+ 0. The resulting number of combinations yielded by the plugboard is as follows:
+\frac{26!}{6! \times 10! \times 2^{10}} = 150,738,274,937,250.
+6!×10!×2
+10
+
+26!
+​
+ =150,738,274,937,250.
+
+All of the components put together yields: 60 \times 17576 \times 150,738,274,937,250 = 158,962,555,217,826,360,00060×17576×150,738,274,937,250 = <b>158,962,555,217,826,360,000</b> total number of ways to set a military-grade Enigma machine.
+<br><iframe width="500;" height="315;" src="https://www.youtube.com/embed/ASfAPOiq_eQ" frameborder="0" allow="accelerometer;
+autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:20px solid black;"></iframe>
+</div>
+
+
+<div id = "Decryption">
+<hr style="height:2px;border:none;color:#333;background-color:#333";/>
+  <h2>Dycryption</h2>
+<hr style="height:2px;border:none;color:#333;background-color:#333";/>
+  <p style = "text-indent : 2em;"> A major flaw with the Enigma code
+    was that a letter could never be encoded as itself. In other words,
+     an “M” would never be encoded as an “M.” This was a huge flaw in the
+     Enigma code because it gave codebreakers a piece of information they
+     could use to decrypt messages. If the codebreakers could guess a word or
+      phrase that would probably appear in the message, they could use this
+      information to start breaking the code. Because the Germans always sent
+      a weather report at the beginning of the message, and usually included the
+      phrase “Heil Hitler” at the end of the message, there were phrases decrypters
+       knew to look for. Decoders could compare a given phrase to the letters
+       in the code, and if a letter in the phrase matched up with a letter
+       in the code, they knew that that part of the code did not contain the
+       phrase. The decoders could then begin cracking the code with a process
+       of elimination approach.</p>
+
+
+
+</div>
+<div class = "inset" id = "Decryption">
+  <p style = "text-indent : 2em;"> Find possible contenders for the
+     encoding of the word “RAIN” in the coded string below.
+     (The symbol % is used to denote unknown letters).</p>
+     <table>
+
+       <tr>
+         <td>Coded message</td>
+         <td>E</td>
+         <td>R</td>
+         <td>W</td>
+         <td>N</td>
+         <td>I</td>
+         <td>K</td>
+         <td>O</td>
+         <td>L</td>
+         <td>K</td>
+         <td>M</td>
+         <td>M</td>
+
+       </tr>
+       <tr>
+         <td>Phrase </td>
+         <td>R</td>
+         <td>A</td>
+         <td>I</td>
+         <td>N</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+
+       </tr>
+
+     </table>
+   </div>
+    <div class= "inset">
+   RAIN cannot be encoded as ERWN because the N in RAIN and the N in ERWN match up. Since N cannot be encoded as itself, this isn’t the encoding. Find possible contenders for the
+      encoding of the word “RAIN” in the coded string below.
+      (The symbol % is used to denote unknown letters).<br><br>
+Let’s shift our message one slot to the right, and see if the result is a valid encoding.</p>
+</div>
+<div class = "inset" id = "Decryption">
+  <p style = "text-indent : 2em;"> <p> </p>
+     <table>
+
+       <tr>
+         <td>Coded message</td>
+         <td>E</td>
+         <td>R</td>
+         <td>W</td>
+         <td>N</td>
+         <td>I</td>
+         <td>K</td>
+         <td>O</td>
+         <td>L</td>
+         <td>K</td>
+         <td>M</td>
+         <td>M</td>
+
+       </tr>
+       <tr>
+         <td>Phrase </td>
+         <td>%</td>
+         <td>R</td>
+         <td>A</td>
+         <td>I</td>
+         <td>N</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+         <td>%</td>
+
+       </tr>
+
+     </table>
+   </div>
+   <p style = "text-indent : 2em;"> Alan Turing and Gordon Welchman designed a machine called the Bombe machine which used electric circuits to solve an Enigma encoded message in under 20 minutes. The Bombe machine would try to determine the settings of the rotors and the plugboard of the Enigma machine used to send a given coded message.
+
+The standard British Bombe machine was essentially 36 Enigma machines wired together,
+ this way, the Bombe machine would simulate several Enigma machines at once. Most
+  Enigma machines had three rotors and to represent this in the Bombe, each of the
+   Enigma simulators in the Bombe had three drums, one for each rotor.</p>
+   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fiansmithblog.files.wordpress.com%2F2012%2F07%2Fbombe-codebreaking-machine-rear.jpg&f=1&nofb=1"
+    alt="Enigma" style = "width: 50%"height = 200 >
+    <p style = "text-indent : 2em;"> The Bombe's drums were color coded to correspond with which rotor they were simulating. While an 3-rotor Enigma machine only used three rotors at a time, there are more to choose from. The drums were arranged so that the top one of the three simulated the left-hand rotor of the Enigma scrambler, the middle one simulated the middle rotor, and the bottom one simulated the right-hand rotor. The drums would turn to try out a new configuration. For each full rotation of the top drums, the middle drums were incremented by one position, and likewise for the middle and bottom drums, giving the total of 26 × 26 × 26 = 17,576 positions of the 3-rotor Enigma scrambler. <br><br>
+
+Then, for a given rotor configuration (at each turn of the drums), the Bombe machine would make a guess about a plugboard setting, say “A is connected to Z.” It then ran through and determined what all of the other letters must be set to on the plugboard. If any contradictions arose, say, it deduced that “A was connected to W,” then it must be that A is not connected to Z on the plugboard, a contradiction arises. Since the other letter mappings the machine just figured out were determined based off of a false assumption (namely the assumption that A is connected to Z), all of those combinations are invalid, and the Bombe machine knows not to waste time checking any of those combinations later. So, say that the machine guessed that A is connected to Z, and then the machine deduces that if A is connected to Z, then B must be connected to E. If it later determines that A is not connected to Z, it knows that B is not connected to E. After such a contradiction arises, the Bombe machine will not guess that A is connected to Z again, and it knows not to guess that B is connected to E, and so on. The Bombe machine shifts the rotor positions, and chooses a new guess and repeats this process until a satisfying arrangement of settings appears. Because electric circuits can perform computations very quickly, the Bombe machine can go through all the rotor combinations in about 20 minutes.<br><br>
+
+At each position of the drums, the configuration would be tested to see if the configuration lead to a logical contradiction, ruling out that setting. If the test did not lead to a contradiction, the machine would stop and the decoder would note that configuration as a candidate solution. Then, the machine is restarted and more configurations are tested. These tests would narrow down the list of possible configurations and the candidate solutions would be tested further to eliminate ones that wouldn't work. There were usually many unsuccessful candidate solutions before the correct one was found.</p>
+
+
+<div class="w3-container w3-black">
+  <h2>Source</h2>
+  <p style = "text-indent : 2em;"> I stole most information about Enigma Machine from the webstie that is linked I just wanted to
+  practice my first website to have CSS, HTMl, and a bit of Javascript to make a static website . PLEASE DO NOT SUE ME. </p>
+  <a href="https://brilliant.org/wiki/enigma-machine/" >This is the link</a>
+</div>
+
+
+
+    </body>
+</html>
